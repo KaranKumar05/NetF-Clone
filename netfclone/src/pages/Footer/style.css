@@ -1,0 +1,84 @@
+footer {
+  background-color: black;
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+footer a {
+  color: rgb(181, 179, 179);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0 0 1rem;
+}
+footer .lg-footer {
+  display: flex;
+  gap: 6.5rem;
+  padding: 0 7rem 0 0;
+}
+footer .lg-footer > span {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .lg-footer > span a {
+  font-size: 0.9rem;
+}
+footer > div .selectLang {
+  position: relative;
+}
+footer > div select {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  padding: 0.15rem 0.5rem 0.15rem 2.5rem;
+  background-color: transparent;
+  background-color: rgb(18, 18, 18);
+  cursor: pointer;
+}
+footer > div .selectLang > span {
+  position: absolute;
+  right: 6rem;
+  top: 0.5rem;
+}
+footer > div > p {
+  font-size: 1rem;
+  color: rgb(181, 179, 179);
+  text-align: left;
+}
+.md-sl-footer {
+  display: none;
+}
+
+@media (max-width: 964px) {
+  footer .lg-footer {
+    display: none;
+  }
+  .md-sl-footer {
+    display: flex;
+    gap: 10rem;
+    gap: 10vw;
+  }
+  footer .md-sl-footer > span {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 10rem;
+  }
+  footer .md-sl-footer > span a {
+    font-size: 0.9rem;
+  }
+  footer {
+    justify-content: flex-start;
+  }
+}
